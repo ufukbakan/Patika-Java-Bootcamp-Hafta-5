@@ -1,0 +1,32 @@
+body{
+  font-size: 12pt;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button{
+  margin: 1em;
+  display: inline-block;
+  padding: .2em 2em;
+  background-color: rgb(17, 206, 102);
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.5em;
+}
+.button:hover{
+  background-color: rgb(67, 255, 152);
+}
+form label{
+  display: table;
+  margin: 1em;
+}
+.absolute-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+form input{
+  font-family: inherit;
+  width: 200px;
+  line-height: 1.5em;
+  height: 1.5em;
+}
