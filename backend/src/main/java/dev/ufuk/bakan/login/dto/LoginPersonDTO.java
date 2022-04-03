@@ -1,32 +1,27 @@
-package dev.ufuk.bakan.people.dto;
+package dev.ufuk.bakan.login.dto;
 
 import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
-public class SignupPersonDTO {
-    @NotEmpty
-    @Length(min = 5, max = 255)
-    private String name;
+public class LoginPersonDTO {
     @NotEmpty
     @Length(min = 9, max = 11)
     private String id;
     @NotEmpty
     @Length(min = 6, max = 255)
     private String password;
+    @NotEmpty
+    private String ticket;
 
-    public SignupPersonDTO(){}
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public LoginPersonDTO(String id, String password, String ticket) {
+        this.id = id;
+        this.password = password;
+        this.ticket = ticket;
     }
 
     public String getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(String id) {
@@ -34,11 +29,21 @@ public class SignupPersonDTO {
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+    public String getTicket() {
+        return this.ticket;
+    }
+
+    public void setTicket(String ticket) {
+        this.ticket = ticket;
+    }
+
 
 }

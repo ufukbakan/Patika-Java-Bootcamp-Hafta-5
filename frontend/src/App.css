@@ -10,6 +10,8 @@ body{
   border-radius: 5px;
   cursor: pointer;
   line-height: 1.5em;
+  color: #fff;
+  text-decoration: none;
 }
 .button:hover{
   background-color: rgb(67, 255, 152);
@@ -29,4 +31,57 @@ form input{
   width: 200px;
   line-height: 1.5em;
   height: 1.5em;
+}
+input.hide{
+  display: none;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+table{
+  border-collapse: collapse;
+}
+table tr td:last-child{
+  text-align: right;
+  padding-left: 1em;
+}
+table tr:nth-child(even){
+  background-color: rgba(0,0,0,0.1);
+}
+.my-credit-cards{
+  border-collapse: separate;
+}
+.my-credit-cards td,th{
+  text-align: center;
+  padding: 0 .2em;
+}
+.my-credit-cards td:last-child input, .my-credits td:last-child input{
+  width: 100px;
+}
+.my-credits{
+  border-collapse: separate;
+  text-align: center;
+}
+.relative-content{
+  padding-top: 2em;
+  display: block;
+  position: relative;
+}
+.relative-center{
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
 }
